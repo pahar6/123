@@ -1,7 +1,6 @@
 bot:
-  token: 6188933942:AAEydKR__IrAjW19wNj68AATIq6qrUBgIjQ
+  token:
   admins:
-  - 398349792
   super_admins: []
   REFERRAL_PERCENT: 10.0
   SUBSCRIPTION_1_MONTH: 60.0

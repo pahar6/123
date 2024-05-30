@@ -4,11 +4,11 @@ from pydantic import BaseModel, SecretStr
 
 
 class PostgresDB(BaseModel):
-    user: str = "postgres"
-    password: SecretStr = SecretStr("postgres")
+    user: str = " "
+    password: SecretStr = SecretStr(" ")
     database: str
     host: str = "localhost"
-    port: int = 5432
+    port: int =
     timezone: str = "Europe/Moscow"
     dialect: str = "asyncpg"
 
@@ -35,7 +35,7 @@ class PostgresDB(BaseModel):
     @classmethod
     def default(cls) -> Self:
         return cls(
-            user="postgres",
-            password="postgres",
-            database="chat_scanner",
+            user=" ",
+            password=" ",
+            database=" ",
         )

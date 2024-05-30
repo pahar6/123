@@ -8,6 +8,6 @@ class Database(BaseModel, abc.ABC):
     password: SecretStr
     database: str
     host: str = "localhost"
-    port: int = 5432
+    port: int =
     timezone: str = "Europe/Moscow"
     dialect: str = "asyncpg"

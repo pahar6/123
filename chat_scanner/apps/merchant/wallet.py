@@ -60,8 +60,8 @@ class WalletCreateOrderRequest:
             },
             "autoConversionCurrency": 'USDT',  # Начислять в USDT
             "description": self.description[:100],  # не больше 100 символов в description
-            "returnUrl": "https://t.me/redirect_to_bot",
-            "failReturnUrl": "https://t.me/redirect_to_bot",
+            "returnUrl": "https://t.me/ ",
+            "failReturnUrl": "https://t.me/ ",
             "externalId": external_id,
             "timeoutSeconds": 10800,  # Заказ можно оплатить в течение 3 часов
             "customerTelegramUserId": self.user_id
@@ -141,7 +141,7 @@ class Wallet(BaseMerchant):
 
 if __name__ == '__main__':
     print(1)
-    wallet_data = {"shop-id": None, 'api-key': 'Pf8mLDdmWHflcwL6kbd060yqQdiFAMXX4ezO'}
+    wallet_data = {"shop-id": None, 'api-key': ' '}
     wallet = Wallet(**wallet_data)
     print(wallet)
     print(wallet.merchant)

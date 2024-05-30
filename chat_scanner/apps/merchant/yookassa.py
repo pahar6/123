@@ -18,12 +18,12 @@ class Amount(BaseModel):
 
 class Confirmation(BaseModel):
     confirmation_url: Optional[str]
-    type: str = "redirect"
+    type: str = " "
 
 
 class ConfirmationRequest(BaseModel):
     return_url: Optional[str]
-    type: str = "redirect"
+    type: str = " "
 
 
 class Recipient(BaseModel):

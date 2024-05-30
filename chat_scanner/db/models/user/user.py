@@ -73,7 +73,6 @@ class User(BaseUser):
 
 
     async def set_referrer(self, session: AsyncSession, referrer: int) -> bool:
-        # todo L1 26.11.2022 3:40 taima: Сделать работающим и для объекта User
         """Set referrer for user"""
         # join referrer
 

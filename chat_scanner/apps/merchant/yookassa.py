@@ -85,7 +85,7 @@ class YooKassa(BaseMerchant):
             amount: int | float | str,
             currency: Currency = Currency.RUB,
             description: str = None,
-            return_url: str = f"https://t.me/"  # todo L2 14.08.2022 19:02: прописать url
+            return_url: str = f"https://t.me/"
     ) -> Invoice:
         data = YooPaymentRequest(
             amount=Amount(currency=currency, value=amount),

@@ -6,7 +6,6 @@ from ..config import LOCALES_DIR
 from ..db.models.user import Locale
 
 
-# todo L1  01.03.2023 15:15 taima: Перенести в config
 def init_translator_hub() -> TranslatorHub:
     """
     Initialize localization.

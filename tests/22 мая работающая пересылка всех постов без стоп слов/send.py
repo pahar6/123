@@ -19,7 +19,7 @@ class SendMixin:
 
     @classmethod
     async def get_media_group(cls, client: Client, message: Message, text: str):
-        text = None  # todo L1 TODO 15.05.2023 19:50 taima: Возможно стоит вообще убрать параметр text
+        text = None
         messages = await client.get_media_group(message.chat.id, message_id=message.id)
         medias = []
         for _message in messages:

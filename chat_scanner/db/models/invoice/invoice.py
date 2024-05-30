@@ -81,7 +81,6 @@ class Invoice(Base, TimestampMixin):
     def __str__(self):
         return f"[{self.__class__.__name__}] {self.user} {self.amount} {self.currency}"
 
-    # todo L1 TODO 22.04.2023 22:56 taima: Do successfully_paid and check_payment methods in one method
     async def successfully_paid(self):
         """Successful payment."""
         self.status = Status.SUCCESS

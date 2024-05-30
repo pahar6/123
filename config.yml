@@ -10,7 +10,7 @@ bot:
   SUBSCRIPTION_PRO_1_MONTH: 70.0
   SUBSCRIPTION_PRO_6_MONTH: 9000.0
   SUBSCRIPTION_PRO_12_MONTH: 18000.0
-  SUPPORT_CHAT_ID: -4151697334
+  SUPPORT_CHAT_ID:
   SUPPORT_MESSAGES: {}
   WITHDRAW_BALANCE: 3000.0
   INSTRUCTION: '0'
@@ -20,18 +20,18 @@ bot:
   AUTO_DELETE_MESSAGE: '0'
   RESPONSE: '0'
 db:
-  user: postgres
-  password: postgres
-  database: chat_scanner
+  user:
+  password:
+  database:
   host: db
-  port: 5432
+  port:
   timezone: Europe/Moscow
   dialect: asyncpg
 webhook: null
 merchants:
-- merchant: yookassa
-  shop_id: null
-  api_key: 381764678:TEST:83823
-- merchant: crypto_pay
-  shop_id: null
-  api_key: 177570:AAbAxDKU7ADpvR8LcXXCefhXAJHcZMxJWn7
+- merchant:
+  shop_id:
+  api_key:
+- merchant:
+  shop_id:
+  api_key:

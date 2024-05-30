@@ -2,12 +2,11 @@
 name = "chat-scanner"
 version = "0.1.0"
 description = ""
-authors = ["taimast <charlskenno@gmail.com>"]
 readme = "README.md"
 packages = [{include = "chat_scanner"}]
 
 [tool.poetry.dependencies]
-auto_selenium = {git= "https://github.com/pahar6/selenium.git"}
+auto_selenium = {}
 uvloop = { version = "*", markers = "sys_platform != 'win32'" }
 python = "^3.11"
 loguru = "^0.7.0"
